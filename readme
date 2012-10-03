@@ -1,0 +1,11 @@
+This is a basic script to help make it easier to compile / decompile your jar files. The menu is pretty straight forward.
+
+To use: stick the target jar file you plan on using in the put-jar-file-here folder. Then in terminal type
+
+    chmod +x menu
+
+and execute the script by typing:
+
+    ./menu
+
+Follow the onscreen instructions and you'll have a working /classout folder or classes.dex file to work with

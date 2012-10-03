@@ -1,0 +1,59 @@
+############################################################################
+#
+# This script file is intended for personal and/or educational use only.
+# It may not be duplicated without the permission of the developer.
+#
+# If you have any questions / comments / concerns
+# contact me at helvitson@gmail.com
+#
+############################################################################
+
+#!/bin/bash
+
+txtrst=$(tput sgr0)
+txtred=$(tput setaf 1)
+chmod 755 scripts/*
+
+while :
+do
+
+clear
+
+echo
+echo "#############################################################"
+echo "##                                                         ##"
+echo "##           Compile / Decompile .jar Files Using          ##"
+echo "##                                                         ##"
+echo "##                    Smali / Baksmali                     ##"
+echo "##                                                         ##"
+echo "##---------------------------------------------------------##"
+echo "##  ${txtred}MyndCTRL @ Android Forums${txtrst}  ||  ${txtred}helvitson @ gmail.com${txtrst}   ##"
+echo "##---------------------------------------------------------##"
+echo "##                                                         ##"
+echo "#############################################################"
+echo "##                                                         ##"
+echo "##               1 - Decompile                             ##"
+echo "##                                                         ##"
+echo "##               2 - Compile                               ##"
+echo "##                                                         ##"
+echo "##               3 - Exit                                  ##"
+echo "##                                                         ##"
+echo "#############################################################"
+echo
+echo -n "Enter your option: "
+read option
+
+case $option in
+    1)
+        clear;
+        scripts/decompile ;;
+        
+    2)
+        clear;
+        scripts/compile ;;
+        
+    3) exit 0 ;;
+
+esac
+
+done

@@ -1,0 +1,23 @@
+############################################################################
+#
+# This script file is intended for personal and/or educational use only.
+# It may not be duplicated without the permission of the developer.
+#
+# If you have any questions / comments / concerns
+# contact me at helvitson@gmail.com
+#
+############################################################################
+
+#!/bin/bash
+
+txtrst=$(tput sgr0)
+txtred=$(tput setaf 1)
+
+echo "Now compiling $PWD/classout"
+
+java -Xmx512M -jar smali.jar $PWD/classout -o $PWD/classes.dex
+
+echo
+echo "Finished..."
+
+scripts/press_enter
